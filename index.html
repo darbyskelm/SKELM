@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SKELM SIGNAL</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #000000;
+      color: #66fcf1;
+      font-family: 'Courier New', monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 1rem;
+    }
+
+    video {
+      max-width: 90%;
+      max-height: 80vh;
+      border: 1px solid #66fcf1;
+      box-shadow: 0 0 20px rgba(102, 252, 241, 0.3);
+    }
+
+    .footer {
+      position: fixed;
+      bottom: 1rem;
+      font-size: 0.7rem;
+      opacity: 0.4;
+      text-align: center;
+      letter-spacing: 0.1em;
+    }
+
+    @media (max-width: 600px) {
+      video {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <video controls autoplay muted>
+    <source src="darbyskelm.mp4" type="video/mp4" />
+    Signal lost. Refresh to reconnect.
+  </video>
+
+  <div class="footer">
+    © 2025 SKELM LLC · open mouths, empty heads, big bytes
+  </div>
+</body>
+</html>
